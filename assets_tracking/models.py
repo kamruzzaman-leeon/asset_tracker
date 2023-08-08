@@ -1,5 +1,3 @@
-# assets_tracking/models.py
-
 from django.db import models
 
 class Company(models.Model):
@@ -9,18 +7,25 @@ class Company(models.Model):
         return self.name
 
 class Employee(models.Model):
-    company = models.ForeignKey(Company, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE)
+    
 
     def __str__(self):
         return self.name
 
 class Device(models.Model):
-    name = models.CharField(max_length=100)    
-    condition = models.TextField(null=True,blank=True)
+    name = models.CharField(max_length=100)
+    CONDITION_CHOICES = [
+        ('good', 'Good'),
+        ('fair', 'Fair'),
+        ('poor', 'Poor'),
+        ('Dead','Dead')
+    ]
+    condition = models.CharField(max_length=10, choices=CONDITION_CHOICES, null=True, blank=True)
     
     def __str__(self):
-        return f"{self.name} - {self.condition}"
+        return f"{self.name} - {self.get_condition_display()}"
 
 class DeviceLog(models.Model):
     device = models.ForeignKey(Device, on_delete=models.CASCADE)
