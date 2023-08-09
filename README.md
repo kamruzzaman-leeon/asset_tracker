@@ -22,23 +22,23 @@ Django app to track corporate assets such as phones, tablets, laptops  and other
           
            cd asset_tracker
         
- 3. Create & activate the virtual environmenT
-### if(virtualenv):
+ 3. Create & activate the virtual environment
+    - if(virtualenv):
 
         virtualenv env
         venv\Script\active
             
-### else
+    - else
         pip install virtualenv
       
 
 ## Requirements
-asgiref==3.7.2
-Django==4.2.4
-djangorestframework==3.14.0
-pytz==2023.3
-sqlparse==0.4.4
-tzdata==2023.3
+- asgiref==3.7.2
+- Django==4.2.4
+- djangorestframework==3.14.0
+- pytz==2023.3
+- sqlparse==0.4.4
+- tzdata==2023.3
 
 ### Install the require dependencies:
     pip install -r requirements.txt
