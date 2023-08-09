@@ -36,3 +36,13 @@ class DeviceViewSet(viewsets.ModelViewSet):
 class DeviceLogViewSet(viewsets.ModelViewSet):
     queryset = DeviceLog.objects.all()
     serializer_class = DeviceLogSerializer
+
+# with the above configuration, you can use the following endpoints for CRUD operations:
+
+# List: GET /api/companies/
+# Create: POST /api/companies/
+# Retrieve: GET /api/companies/{id}/
+# Update: PUT /api/companies/{id}/
+# Partial Update: PATCH /api/companies/{id}/
+# Delete: DELETE /api/companies/{id}/
+# The same endpoints apply for employees, devices, and device-logs. Replace companies with the respective model name in the URL to access the endpoints for other models.

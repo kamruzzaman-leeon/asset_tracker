@@ -1,5 +1,6 @@
 # asset_tracker
 Django app to track corporate assets such as phones, tablets, laptops  and other gears handed out to employees.
+# Instruction 
 
 ## Table of Content
 
@@ -45,8 +46,31 @@ Django app to track corporate assets such as phones, tablets, laptops  and other
 ### Install the require dependencies:
     pip install -r requirements.txt
 
-# Instruction       
+### Database Setup:
+    python manage.py makemigrations
+    python manage.py migrate
+   
+### Running the Project:
+    python manage.py runserver
 
+### Initial Admin User:
+    python manage.py createsuperuser
+
+### Run Project:
+
+1. Accessing the Django admin
+    http://127.0.0.1:8000/admin/
+
+- Log In:
+    - Log In with Superuser Credentials
+    - or Createsuperuser
+- Manage Data:
+    - Compaines
+    - Employees
+    - Devices
+    - Device Logs
+2. view all data:
+    http://127.0.0.1:8000/api/
 
 # TEST
     python manage.py test
