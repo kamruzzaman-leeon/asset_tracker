@@ -1,14 +1,14 @@
 # asset_tracker
 Django app to track corporate assets such as phones, tablets, laptops  and other gears handed out to employees.
 
-##Instruction
+## Instruction
 
-##Table of Content
+## Table of Content
 
--[Installation](#installation)
--[Requirement](#requirement)
+- [Installation](#installation)
+- [Requirement](#requirement)
 
-##Installation
+## Installation
 step 0: make sure you have install the python in your system
 step 1: Clone the repository : 
         ```bash
@@ -29,7 +29,7 @@ step 3: Create & activate the virtual environment
             pip install virtualenv
          ```
 
-##Requirements
+## Requirements
 Install the require dependencies:
   ```bash
         pip install -r requirements.txt
