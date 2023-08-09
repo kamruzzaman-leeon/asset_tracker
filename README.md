@@ -13,9 +13,9 @@ Django app to track corporate assets such as phones, tablets, laptops  and other
 
  1. Clone the repository : 
 
-        ```bash
+        
         git clone https://github.com/kamruzzaman-leeon/asset_tracker.git
-        ```
+        
 
  2. Navigate to the project dicrectory:
 
@@ -32,7 +32,7 @@ Django app to track corporate assets such as phones, tablets, laptops  and other
             ```
 
         else
-        
+
           ```bash
             pip install virtualenv
          ```
