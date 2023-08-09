@@ -96,4 +96,4 @@ class DeviceLogModelTest(TestCase):
 
 
 
-
+#to run test 

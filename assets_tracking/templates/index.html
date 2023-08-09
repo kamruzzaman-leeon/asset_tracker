@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asset List</title>
+</head>
+<body>
+    <h1>Companies</h1>
+    <ul>
+        {% for company in companies %}
+            <li>{{ company.name }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Employees</h1>
+    <ul>
+        {% for employee in employees %}
+            <li>{{ employee.name }} - {{ employee.company.name }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Devices</h1>
+    <ul>
+        {% for device in devices %}
+            <li>{{ device.name }} - {{ device.get_condition_display }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Device Logs</h1>
+    <ul>
+        {% for log in device_logs %}
+            <li>{{ log.device.name }} - {{ log.employee.name }} - Checked out: {{ log.checked_out_date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
