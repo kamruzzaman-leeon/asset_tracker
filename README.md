@@ -24,12 +24,13 @@ Django app to track corporate assets such as phones, tablets, laptops  and other
         
  3. Create & activate the virtual environment
     - if(virtualenv):
-
-        virtualenv env
-        venv\Script\active
+            virtualenv env
+            venv\Script\active
             
     - else
-        pip install virtualenv
+            pip install virtualenv
+            virtualenv env
+            venv\Script\active
       
 
 ## Requirements
