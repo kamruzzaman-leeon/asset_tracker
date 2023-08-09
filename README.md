@@ -5,8 +5,8 @@ Django app to track corporate assets such as phones, tablets, laptops  and other
 
 ## Table of Content
 
-- [Installation](#Installation)
-- [Requirement](#Requirement)
+- [Installation](#installation)
+- [Requirements](#requirements)
 
 ## Installation
  0. make sure you have install the python in your system
